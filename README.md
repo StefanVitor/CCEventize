@@ -57,6 +57,24 @@
 ![Screenshot_2021-05-30-11-10-42](https://user-images.githubusercontent.com/25621259/120105445-33c91b80-c159-11eb-949f-7f78ee7e8b65.png)
 
 
+* Create (modified) event - full screen
+
+![Screenshot_2021-05-30-15-21-35](https://user-images.githubusercontent.com/25621259/120106029-b652da80-c15b-11eb-8bf8-ad3db8b7f629.png)
+![Screenshot_2021-05-30-15-24-38](https://user-images.githubusercontent.com/25621259/120106030-b6eb7100-c15b-11eb-9c9c-c750362c45e5.png)
+
+
+* Create (modified) event - Integration with RAMP, so that assets (cryptocurrencies) from RAMP network are displayed in application as possible cryptocurrency for payment
+
+![Screenshot_2021-05-30-15-25-33](https://user-images.githubusercontent.com/25621259/120106256-a1c31200-c15c-11eb-8461-46ec6ee6e554.png)
+
+
+* Create (modified) event - Integration with RAMP, so that minimum ticket price cannot be lower than minimum puchase amount for selected cryptocurrency
+
+![Screenshot_2021-05-30-15-22-14](https://user-images.githubusercontent.com/25621259/120106326-e0f16300-c15c-11eb-95b3-891933ad0e18.png)
+
+
+* Buy ticket 
+
 ### Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
