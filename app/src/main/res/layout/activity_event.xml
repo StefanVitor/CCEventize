@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ui.register.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/sp_event_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:prompt="@string/event_type"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/tv_event_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_type"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:labelFor="@+id/sp_event_type"
+                android:textAlignment="textStart"
+                android:alpha="0.6"
+                android:layout_marginStart="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextView"
+                android:layout_below="@id/sp_event_type"
+                android:gravity="start"
+                android:layout_marginLeft="8dp" />
+
+            <EditText
+                android:id="@+id/et_event_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:ems="10"
+                android:hint="@string/event_name"
+                android:inputType="textCapSentences"
+                android:layout_below="@id/tv_event_type"
+                android:importantForAutofill="no"/>
+
+            <TextView
+                android:id="@+id/tv_event_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:labelFor="@+id/et_event_name"
+                android:textAlignment="textStart"
+                android:alpha="0.6"
+                android:layout_marginStart="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextView"
+                android:layout_below="@id/et_event_name"
+                android:gravity="start"
+                android:layout_marginLeft="8dp" />
+
+            <EditText
+                android:id="@+id/et_event_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_below="@id/tv_event_name"
+                android:ems="10"
+                android:maxLines="4"
+                android:lines="4"
+                android:hint="@string/event_description"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:importantForAutofill="no"/>
+
+            <TextView
+                android:id="@+id/tv_event_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_description"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:labelFor="@+id/et_event_description"
+                android:textAlignment="textStart"
+                android:alpha="0.6"
+                android:layout_marginStart="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextView"
+                android:layout_below="@id/et_event_description"
+                android:gravity="start"
+                android:layout_marginLeft="8dp" />
+
+            <EditText
+                android:id="@+id/et_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_below="@id/et_event_description"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/event_start_date"
+                android:importantForAutofill="no"
+                android:focusable="false"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/tv_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_start_date"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:labelFor="@+id/et_start_date"
+                android:textAlignment="textStart"
+                android:alpha="0.6"
+                android:layout_marginStart="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextView"
+                android:layout_below="@id/et_start_date"
+                android:gravity="start"
+                android:layout_marginLeft="8dp" />
+
+            <EditText
+                android:id="@+id/et_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_below="@id/et_start_date"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/event_start_time"
+                android:importantForAutofill="no"
+                android:focusable="false"
+                android:inputType="time" />
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_start_time"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:labelFor="@+id/et_start_time"
+                android:textAlignment="textStart"
+                android:alpha="0.6"
+                android:layout_marginStart="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextView"
+                android:layout_below="@id/et_start_time"
+                android:gravity="start"
+                android:layout_marginLeft="8dp" />
+
+            <EditText
+                android:id="@+id/et_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_below="@id/tv_start_time"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/event_end_date"
+                android:importantForAutofill="no"
+                android:focusable="false"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/tv_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_end_date"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:labelFor="@+id/et_end_date"
+                android:textAlignment="textStart"
+                android:alpha="0.6"
+                android:layout_marginStart="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextView"
+                android:layout_below="@id/et_end_date"
+                android:gravity="start"
+                android:layout_marginLeft="8dp" />
+
+            <EditText
+                android:id="@+id/et_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_below="@id/tv_end_date"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/event_end_time"
+                android:importantForAutofill="no"
+                android:focusable="false"
+                android:inputType="time" />
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_end_time"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:labelFor="@+id/et_end_time"
+                android:textAlignment="textStart"
+                android:alpha="0.6"
+                android:layout_marginStart="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextView"
+                android:layout_below="@id/et_end_time"
+                android:gravity="start"
+                android:layout_marginLeft="8dp" />
+
+            <Spinner
+                android:id="@+id/sp_currency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_below="@id/tv_end_time"
+                android:prompt="@string/event_currency"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/tv_currency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_currency"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:labelFor="@+id/sp_currency"
+                android:textAlignment="textStart"
+                android:alpha="0.6"
+                android:layout_marginStart="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextView"
+                android:layout_below="@id/sp_currency"
+                android:gravity="start"
+                android:layout_marginLeft="8dp" />
+
+            <EditText
+                android:id="@+id/et_event_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_below="@id/tv_currency"
+                android:gravity="end"
+                android:ems="10"
+                android:hint="@string/event_price"
+                android:inputType="numberDecimal"
+                android:importantForAutofill="no"/>
+
+            <TextView
+                android:id="@+id/tv_event_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_price"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:labelFor="@+id/et_event_price"
+                android:textAlignment="textStart"
+                android:alpha="0.6"
+                android:layout_marginStart="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextView"
+                android:layout_below="@id/et_event_price"
+                android:gravity="start"
+                android:layout_marginLeft="8dp" />
+
+            <EditText
+                android:id="@+id/et_coin_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_below="@id/tv_event_price"
+                android:ems="10"
+                android:hint="@string/event_coin_address"
+                android:inputType="text"
+                android:importantForAutofill="no"/>
+
+            <TextView
+                android:id="@+id/tv_coin_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_coin_address"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:labelFor="@+id/et_coin_address"
+                android:textAlignment="textStart"
+                android:alpha="0.6"
+                android:layout_marginStart="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextView"
+                android:layout_below="@id/et_coin_address"
+                android:gravity="start"
+                android:layout_marginLeft="8dp" />
+
+            <Button
+                android:id="@+id/btn_create_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_below="@id/tv_coin_address"
+                android:background="@color/colorAccent"
+                android:text="@string/create_event"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

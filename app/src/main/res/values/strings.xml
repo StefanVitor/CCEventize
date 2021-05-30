@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">CCEventize</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_email">Not a valid email</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="create_act">Create Account</string>
+    <string name="login_forgot_password">Forgot Password?"</string>
+
+    <string name="register_label">Register</string>
+    <string name="register_email">Email</string>
+    <string name="register_password">Password</string>
+    <string name="register_first_name">First Name</string>
+    <string name="register_last_name">Last Name</string>
+    <string name="register_login_title">Login</string>
+    <string name="register_button">Register button</string>
+    <string name="invalid_first_name">First name is empty</string>
+    <string name="invalid_last_name">Last name is empty</string>
+    <string name="register_failed">"Register failed"</string>
+
+    <string name="event_list_add_event">Add event</string>
+
+    <string name="title_activity_event">Event</string>
+    <string name="event_type">Event type</string>
+    <string name="event_name">Name</string>
+    <string name="event_description">Description</string>
+    <string name="event_start_date">Start date</string>
+    <string name="event_start_time">Start time</string>
+    <string name="event_end_date">End date</string>
+    <string name="event_end_time">End time</string>
+    <string name="event_currency">Currency</string>
+    <string name="event_price">Price in</string>
+    <string name="event_coin_address">address</string>
+    <string name="create_event">Create event</string>
+    <string name="invalid_event_name">Event name is empty</string>
+    <string name="invalid_event_description">Event description is empty</string>
+    <string name="invalid_event_ticket_price_zero">Ticket price is zero (empty)</string>
+    <string name="invalid_event_invalid_ticket_price">Ticket price is lower than minimal possible price (ticket buyer will not be able to buy only 1 ticket)</string>
+    <string name="invalid_event_coin_address">Coin address is empty</string>
+
+    <string name="dialog_buy_ticket_event_name">Event name</string>
+    <string name="dialog_buy_ticket_event_price">Price</string>
+    <string name="dialog_buy_ticket_event_currency">Currency</string>
+    <string name="dialog_buy_ticket_event_ticket_number">Number of tickets</string>
+    <string name="dialog_buy_ticket_event_ok_button">OK</string>
+    <string name="dialog_buy_ticket_event_cancel_button">Cancel</string>
+
+    <string name="event_list_item_from">From:</string>
+    <string name="event_list_item_to">To:</string>
+    <string name="event_list_item_price">Price:</string>
+
+    <string name="title_activity_event_list">event_list</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="menu_all_events">All events</string>
+    <string name="menu_my_tickets">My tickets</string>
+    <string name="menu_my_events">My events</string>
+
+    <string name="lost_password_label">Lost password</string>
+    <string name="lost_pass_email">Email</string>
+    <string name="lost_pass_button_submit">Submit</string>
+    <string name="lost_pass_send_email">Email with reset password sent</string>
+</resources>

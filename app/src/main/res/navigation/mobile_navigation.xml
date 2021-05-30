@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/all_events">
+
+    <fragment
+        android:id="@+id/all_events"
+        android:name="com.network.ramp.cceventize.ui.event_list.EventListFragment"
+        android:label="@string/menu_all_events"
+        tools:layout="@layout/fragment_event_list">
+        <argument
+            android:name="fragment_type"
+            app:argType="string"
+            android:defaultValue="all"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/my_tickets"
+        android:name="com.network.ramp.cceventize.ui.event_list.EventListFragment"
+        android:label="@string/menu_my_tickets"
+        tools:layout="@layout/fragment_event_list">
+        <argument
+            android:name="fragment_type"
+            app:argType="string"
+            android:defaultValue="tickets"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/my_events"
+        android:name="com.network.ramp.cceventize.ui.event_list.EventListFragment"
+        android:label="@string/menu_my_events"
+        tools:layout="@layout/fragment_event_list">
+        <argument
+            android:name="fragment_type"
+            app:argType="string"
+            android:defaultValue="my"/>
+    </fragment>
+</navigation>
